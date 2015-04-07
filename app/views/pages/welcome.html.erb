@@ -1,8 +1,7 @@
-<h1>Welcome</h1>
-<p>
-	This is the landing page for Angelo's Blog, a Angelo's Blog blog made using Ruby on Rails.
-</p>
+<h1>This is Angelo's blog</h1>
+<br></br><br></br>
 
-<p>
-	This page is just a placeholder. Later, we'll replace it with the posts in our blog.
-</p>
+<% @posts.each do |post| %>
+  <%= render 'posts/post', post: post %>
+  <br></br><br></br>
+<% end %>
